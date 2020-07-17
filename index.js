@@ -10,6 +10,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
+const port = process.env.PORT || 9911
 
 
 app.get("/", (req, res) => {
@@ -23,6 +24,6 @@ app.post('/', (req, res) => {
 })
 
 
-app.listen(9911, () => {
-    console.log('server is up on port ' + 9911);
+app.listen(port, () => {
+    console.log('server is up on port ' + port);
 })
