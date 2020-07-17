@@ -12,14 +12,14 @@ app.use(express.static(__dirname + "/public"));
 
 
 
-app.get("/gagan-portfolio", (req, res) => {
+app.get("/", (req, res) => {
     res.render("landing");
 })
 
-app.post('/gagan-portfolio', (req, res) => {
+app.post('/', (req, res) => {
     const User = req.body;
     sendWelcomeEmail(User.name, User.email, User.message);
-    res.redirect('/gagan-portfolio');
+    res.redirect('/');
 })
 
 
