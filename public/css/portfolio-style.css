@@ -246,14 +246,14 @@ hr{
         transition: all 0.4s ease-in-out;
     }
 
-    @keyframes glow {
+    /* @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1be600, 0 0 40px #1be600, 0 0 50px #1be600, 0 0 60px #1be600, 0 0 70px #1be600;
   }
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #1310c2, 0 0 40px #1310c2, 0 0 50px #1310c2, 0 0 60px #1310c2, 0 0 70px #1310c2, 0 0 80px #1310c2;
   }
-}
+} */
 #home .btn:hover
     {
         background: #D43F52;
